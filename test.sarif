@@ -1,0 +1,363 @@
+{
+    "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+    "version": "2.1.0",
+    "runs": [
+        {
+            "tool": {
+                "driver": {
+                    "name": "Synopsys Black Duck",
+                    "organization": "Synopsys",
+                    "version": "1.0.17",
+                    "rules": [
+                        {
+                            "id": "xstream",
+                            "shortDescription": {
+                                "text": "The direct dependency xstream/1.4.5 has 33 vulnerabilities (max score 9.8)."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency xstream/1.4.5 has 33 vulnerabilities (max score 9.8).\n\nList of direct vulnerabilities:\nBDSA-2021-2587,BDSA-2021-0737,BDSA-2013-0046,BDSA-2020-3787,BDSA-2017-0661,BDSA-2021-0728,BDSA-2021-0721,BDSA-2021-0732,BDSA-2020-3780,BDSA-2021-2586,BDSA-2021-0724,BDSA-2021-2576,BDSA-2021-2565,BDSA-2021-2582,BDSA-2021-0730,BDSA-2021-0722,BDSA-2021-2573,BDSA-2021-2603,BDSA-2021-0736,BDSA-2021-2580,CVE-2019-10173,BDSA-2021-2602,BDSA-2020-3372,BDSA-2021-2568,CVE-2016-3674,BDSA-2021-0731,BDSA-2021-1626,BDSA-2021-2590,BDSA-2021-2569,BDSA-2021-0726,BDSA-2021-0735,BDSA-2021-2581,BDSA-2021-2593"
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency xstream/1.4.5 has 33 vulnerabilities (max score 9.8).\n\n\n| Parent | Child Component | Vulnerability | Score |  Policy | Description | Current Ver |\n| --- | --- | --- | --- | --- | --- | --- |\n| / | xstream/1.4.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/CVE-2019-10173/overview\" target=\"_blank\">CVE-2019-10173</a> | <span style=\"color:DarkRed\">9.8</span> | Vulnerability Score Greater Than Or Equal to 6 | It was found that xstream API version 1.4.10 before 1.4.11 introduced a regression for a previous deserialization flaw. If the security framework has not been initialized, it may allow a remote attack | 1.4.5 |\n| / | xstream/1.4.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2013-0046/overview\" target=\"_blank\">BDSA-2013-0046</a> | <span style=\"color:DarkRed\">9.1</span> | Vulnerability Score Greater Than Or Equal to 6 | Xstream is vulnerable to remote code execution (RCE) by an attacker who can supply a specially crafted input stream. | 1.4.5 |\n| / | xstream/1.4.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-2573/overview\" target=\"_blank\">BDSA-2021-2573</a> | <span style=\"color:Red\">9.0</span> | Vulnerability Score Greater Than Or Equal to 6 | XStream is vulnerable to unsafe deserialization of attacker controlled input. A remote attacker could leverage this to execute arbitrary code from a remote server.  Note that if the application uses X | 1.4.5 |\n| / | xstream/1.4.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-2603/overview\" target=\"_blank\">BDSA-2021-2603</a> | <span style=\"color:Red\">9.0</span> | Vulnerability Score Greater Than Or Equal to 6 | XStream is vulnerable to remote code execution (RCE) due to the unsafe deserialization of classes. A remote attacker could execute arbitrary code on a vulnerable server by causing that server to deser | 1.4.5 |\n| / | xstream/1.4.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-2580/overview\" target=\"_blank\">BDSA-2021-2580</a> | <span style=\"color:Red\">9.0</span> | Vulnerability Score Greater Than Or Equal to 6 | XStream is vulnerable to unsafe deserialization of attacker controlled input. A remote attacker could leverage this to execute arbitrary code from a remote server.  **Note** If the application uses XS | 1.4.5 |\n| / | xstream/1.4.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-2602/overview\" target=\"_blank\">BDSA-2021-2602</a> | <span style=\"color:Red\">9.0</span> | Vulnerability Score Greater Than Or Equal to 6 | XStream is vulnerable to remote code execution (RCE) due to the unsafe deserialization of classes. A remote attacker could execute arbitrary code on a vulnerable server by causing that server to deser | 1.4.5 |\n| / | xstream/1.4.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-3372/overview\" target=\"_blank\">BDSA-2020-3372</a> | <span style=\"color:Red\">9.0</span> | Vulnerability Score Greater Than Or Equal to 6 | Xstream is vulnerable to remote code execution (RCE) through specially crafted input. A remote attacker is able to execute arbitrary system commands on the host machine if Xstream's security framework | 1.4.5 |\n| / | xstream/1.4.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-2590/overview\" target=\"_blank\">BDSA-2021-2590</a> | <span style=\"color:Red\">9.0</span> | Vulnerability Score Greater Than Or Equal to 6 | XStream is vulnerable to remote code execution (RCE) due to the unsafe deserialization of classes. A remote attacker could execute arbitrary code on a vulnerable server by causing that server to deser | 1.4.5 |\n| / | xstream/1.4.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-2569/overview\" target=\"_blank\">BDSA-2021-2569</a> | <span style=\"color:Red\">9.0</span> | Vulnerability Score Greater Than Or Equal to 6 | XStream is vulnerable to unsafe deserialization of attacker controlled input. A remote attacker could leverage this to execute arbitrary system commands.  Note that if the application uses XStreams se | 1.4.5 |\n| / | xstream/1.4.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-2581/overview\" target=\"_blank\">BDSA-2021-2581</a> | <span style=\"color:Red\">9.0</span> | Vulnerability Score Greater Than Or Equal to 6 | XStream is vulnerable to unsafe deserialization of user-controlled input. A remote attacker could leverage this to execute arbitrary code from a remote server.  **Note:** If the application uses XStre | 1.4.5 |\n| / | xstream/1.4.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-2593/overview\" target=\"_blank\">BDSA-2021-2593</a> | <span style=\"color:Red\">9.0</span> | Vulnerability Score Greater Than Or Equal to 6 | XStream is vulnerable to remote code execution (RCE) due to the unsafe deserialization of classes. A remote attacker could execute arbitrary code on a vulnerable server by causing that server to deser | 1.4.5 |\n| / | xstream/1.4.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-0728/overview\" target=\"_blank\">BDSA-2021-0728</a> | <span style=\"color:Red\">8.9</span> | Vulnerability Score Greater Than Or Equal to 6 | XStream, when in its default configuration or operating without a sufficient blacklist / whitelist configuration, is vulnerable to an arbitrary command execution issue. This is due to how XStream can  | 1.4.5 |\n| / | xstream/1.4.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-0721/overview\" target=\"_blank\">BDSA-2021-0721</a> | <span style=\"color:Red\">8.8</span> | Vulnerability Score Greater Than Or Equal to 6 | Xstream is vulnerable to remote code execution (RCE) by an attacker who can supply a specially crafted input stream. | 1.4.5 |\n| / | xstream/1.4.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-0724/overview\" target=\"_blank\">BDSA-2021-0724</a> | <span style=\"color:Red\">8.8</span> | Vulnerability Score Greater Than Or Equal to 6 | Xstream is vulnerable to remote code execution (RCE) by an attacker who can supply a specially crafted input stream. | 1.4.5 |\n| / | xstream/1.4.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-0730/overview\" target=\"_blank\">BDSA-2021-0730</a> | <span style=\"color:Red\">8.8</span> | Vulnerability Score Greater Than Or Equal to 6 | XStream, when in its default configuration or operating without a sufficient blacklist / whitelist configuration, is vulnerable to an arbitrary code execution issue. This is due to how XStream can pot | 1.4.5 |\n| / | xstream/1.4.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-0722/overview\" target=\"_blank\">BDSA-2021-0722</a> | <span style=\"color:Red\">8.8</span> | Vulnerability Score Greater Than Or Equal to 6 | XStream, when in its default configuration or operating without a sufficient blacklist / whitelist configuration, is vulnerable to an arbitrary code execution issue. This is due to how XStream can pot | 1.4.5 |\n| / | xstream/1.4.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-1626/overview\" target=\"_blank\">BDSA-2021-1626</a> | <span style=\"color:Red\">8.8</span> | Vulnerability Score Greater Than Or Equal to 6 | XStream, when in its default configuration or operating without a sufficient blacklist / whitelist configuration, is vulnerable to an arbitrary code execution issue. This is due to how XStream can pot | 1.4.5 |\n| / | xstream/1.4.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-0726/overview\" target=\"_blank\">BDSA-2021-0726</a> | <span style=\"color:Red\">8.8</span> | Vulnerability Score Greater Than Or Equal to 6 | XStream, when in its default configuration or operating without a sufficient blacklist / whitelist configuration, is vulnerable to an arbitrary code execution issue. This is due to how XStream can pot | 1.4.5 |\n| / | xstream/1.4.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-2587/overview\" target=\"_blank\">BDSA-2021-2587</a> | <span style=\"color:Red\">8.1</span> | Vulnerability Score Greater Than Or Equal to 6 | XStream is vulnerable to server-side request forgery (SSRF) due to the improper restriction of deserialization functionality. A remote attacker could send requests to intranet hosts by sending malicio | 1.4.5 |\n| / | xstream/1.4.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-2586/overview\" target=\"_blank\">BDSA-2021-2586</a> | <span style=\"color:Red\">8.1</span> | Vulnerability Score Greater Than Or Equal to 6 | XStream is vulnerable to server-side request forgery (SSRF) due to the improper restriction of deserialization functionality. A remote attacker could send requests to intranet hosts by sending malicio | 1.4.5 |\n| / | xstream/1.4.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-3780/overview\" target=\"_blank\">BDSA-2020-3780</a> | <span style=\"color:Red\">7.8</span> | Vulnerability Score Greater Than Or Equal to 6 | XStream is vulnerable to an arbitrary file deletion flaw in it's handling of unmarshalling specially crafted input. A remote attacker could delete arbitrary files on the server, if the server process  | 1.4.5 |\n| / | xstream/1.4.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-3787/overview\" target=\"_blank\">BDSA-2020-3787</a> | <span style=\"color:Red\">7.7</span> | Vulnerability Score Greater Than Or Equal to 6 | Xstream is vulnerable to an information disclosure flaw where it can be tricked into including remote resources when unmarshalling specially crafted input. A remote attacker could learn details about  | 1.4.5 |\n| / | xstream/1.4.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-0736/overview\" target=\"_blank\">BDSA-2021-0736</a> | <span style=\"color:Red\">7.7</span> | Vulnerability Score Greater Than Or Equal to 6 | XStream, when in its default configuration or operating without a sufficient blacklist / whitelist configuration, is vulnerable to a server-side request forgery (SSRF) issue. This is due to how XStrea | 1.4.5 |\n| / | xstream/1.4.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-0731/overview\" target=\"_blank\">BDSA-2021-0731</a> | <span style=\"color:Red\">7.7</span> | Vulnerability Score Greater Than Or Equal to 6 | XStream is vulnerable to server-side request forgery (SSRF) by a remote attacker who can supply a specially crafted input stream to modify or inject objects. This allows them to request data from the  | 1.4.5 |\n| / | xstream/1.4.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/CVE-2016-3674/overview\" target=\"_blank\">CVE-2016-3674</a> | <span style=\"color:Red\">7.5</span> | Vulnerability Score Greater Than Or Equal to 6 | Multiple XML external entity (XXE) vulnerabilities in the (1) Dom4JDriver, (2) DomDriver, (3) JDomDriver, (4) JDom2Driver, (5) SjsxpDriver, (6) StandardStaxDriver, and (7) WstxDriver drivers in XStrea | 1.4.5 |\n| / | xstream/1.4.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-2576/overview\" target=\"_blank\">BDSA-2021-2576</a> | <span style=\"color:Red\">7.3</span> | Vulnerability Score Greater Than Or Equal to 6 | XStream is vulnerable to remote code execution (RCE) due to the unsafe deserialization of classes from the `com.sun.java.util.jar.pack` package. A remote attacker could execute arbitrary code on a vul | 1.4.5 |\n| / | xstream/1.4.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-2565/overview\" target=\"_blank\">BDSA-2021-2565</a> | <span style=\"color:Red\">7.3</span> | Vulnerability Score Greater Than Or Equal to 6 | XStream is vulnerable to remote code execution (RCE) due to the unsafe demarshalling of CORBA and XSLTC classes. A remote attacker could execute arbitrary code on a vulnerable server by causing that s | 1.4.5 |\n| / | xstream/1.4.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-2568/overview\" target=\"_blank\">BDSA-2021-2568</a> | <span style=\"color:Red\">7.3</span> | Vulnerability Score Greater Than Or Equal to 6 | XStream is vulnerable to remote code execution (RCE) due to the unsafe demarshalling of the `KeyStoreResolver$KeyStoreIterator` subclass. A remote attacker could execute arbitrary code on a vulnerable | 1.4.5 |\n| / | xstream/1.4.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-0737/overview\" target=\"_blank\">BDSA-2021-0737</a> | <span style=\"color:Orange\">6.7</span> | Vulnerability Score Greater Than Or Equal to 6 | XStream, when in its default configuration or operating without a sufficient blacklist / whitelist configuration, is vulnerable to a denial-of-service (DoS) issue. This is due to how XStream can poten | 1.4.5 |\n| / | xstream/1.4.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2017-0661/overview\" target=\"_blank\">BDSA-2017-0661</a> | <span style=\"color:Orange\">6.7</span> | Vulnerability Score Greater Than Or Equal to 6 | A flaw exists within (de)seralization functionality within XStream. Sending a carefully crafted object data will crash the Java process and cause a DoS *(Denial of Service)*. In order to exploit this  | 1.4.5 |\n| / | xstream/1.4.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-0732/overview\" target=\"_blank\">BDSA-2021-0732</a> | <span style=\"color:Orange\">6.7</span> | Vulnerability Score Greater Than Or Equal to 6 | XStream, when in its default configuration or operating without a sufficient blacklist / whitelist configuration, is vulnerable to an arbitrary file deletion issue. This is due to how XStream can pote | 1.4.5 |\n| / | xstream/1.4.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-2582/overview\" target=\"_blank\">BDSA-2021-2582</a> | <span style=\"color:Orange\">6.7</span> | Vulnerability Score Greater Than Or Equal to 6 | XStream is vulnerable to unsafe deserialization of attacker controlled input. A remote attacker could leverage this to consume all available CPU cycles via an infinite loop condition.  **Note:** If th | 1.4.5 |\n| / | xstream/1.4.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-0735/overview\" target=\"_blank\">BDSA-2021-0735</a> | <span style=\"color:Orange\">6.7</span> | Vulnerability Score Greater Than Or Equal to 6 | Xstream is vulnerable to regular expression denial-of-service (ReDoS) by a remote attacker who can supply a specially crafted input stream. This allows the attacker to occupy a thread that consumes ma | 1.4.5 |\n\n\nRecommended to upgrade to version 1.4.18.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "9.8"
+                            }
+                        },
+                        {
+                            "id": "webdrivermanager",
+                            "shortDescription": {
+                                "text": "The direct dependency webdrivermanager/4.3.1 has 5 vulnerabilities in child dependencies (max score 6.5)."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency webdrivermanager/4.3.1 has 5 vulnerabilities in child dependencies (max score 6.5).\n\nList of indirect vulnerabilities:\nBDSA-2021-2075,BDSA-2021-2073,BDSA-2021-2078,BDSA-2021-2076,BDSA-2021-2510"
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency webdrivermanager/4.3.1 has 5 vulnerabilities in child dependencies (max score 6.5).\n\n\n| Parent | Child Component | Vulnerability | Score |  Policy | Description | Current Ver |\n| --- | --- | --- | --- | --- | --- | --- |\n| webdrivermanager/4.3.1 | commons-compress/1.20 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-2075/overview\" target=\"_blank\">BDSA-2021-2075</a> | <span style=\"color:Orange\">6.5</span> | Vulnerability Score Greater Than Or Equal to 6 | Apache Commons Compress contains a flaw when reading a specially crafted 7z file. An attacker could exploit this vulnerability to cause a denial-of-service (DoS). | 1.20 |\n| webdrivermanager/4.3.1 | commons-compress/1.20 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-2073/overview\" target=\"_blank\">BDSA-2021-2073</a> | <span style=\"color:Orange\">6.5</span> | Vulnerability Score Greater Than Or Equal to 6 | Apache Commons Compress contains a flaw when reading a specially crafted ZIP file. An attacker could exploit this vulnerability to cause a denial-of-service (DoS). | 1.20 |\n| webdrivermanager/4.3.1 | commons-compress/1.20 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-2078/overview\" target=\"_blank\">BDSA-2021-2078</a> | <span style=\"color:Orange\">6.5</span> | Vulnerability Score Greater Than Or Equal to 6 | Apache Commons Compress contains a flaw when reading a specially crafted TAR file. An attacker could exploit this vulnerability to cause a denial-of-service (DoS). | 1.20 |\n| webdrivermanager/4.3.1 | commons-compress/1.20 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-2076/overview\" target=\"_blank\">BDSA-2021-2076</a> | <span style=\"color:Orange\">6.5</span> | Vulnerability Score Greater Than Or Equal to 6 | Apache Commons Compress contains a flaw when reading a specially crafted 7z file. An attacker could exploit this vulnerability to cause a denial-of-service (DoS). | 1.20 |\n| webdrivermanager/4.3.1 | jsoup/1.13.1 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-2510/overview\" target=\"_blank\">BDSA-2021-2510</a> | <span style=\"color:Orange\">6.5</span> | Vulnerability Score Greater Than Or Equal to 6 | jsoup is vulnerable to denial-of-service (DoS) due to flaws in its parsing component. A remote attacker could impact the performance of the application, or cause it to crash, by sending maliciously cr | 1.13.1 |\n\n\nRecommended to upgrade to version 4.4.3.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "0"
+                            }
+                        },
+                        {
+                            "id": "ant",
+                            "shortDescription": {
+                                "text": "The direct dependency ant/1.6.5 has 3 vulnerabilities (max score 7.2)."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency ant/1.6.5 has 3 vulnerabilities (max score 7.2).\n\nList of direct vulnerabilities:\nBDSA-2018-1836,BDSA-2021-2085,BDSA-2021-2083"
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency ant/1.6.5 has 3 vulnerabilities (max score 7.2).\n\n\n| Parent | Child Component | Vulnerability | Score |  Policy | Description | Current Ver |\n| --- | --- | --- | --- | --- | --- | --- |\n| / | ant/1.6.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2018-1836/overview\" target=\"_blank\">BDSA-2018-1836</a> | <span style=\"color:Red\">7.2</span> | Vulnerability Score Greater Than Or Equal to 6 | Apache ant is vulnerable to an arbitrary file write vulnerability via a directory traversal. An attacker could exploit this vulnerability by supplying the component with a maliciously crafted archive  | 1.6.5 |\n| / | ant/1.6.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-2085/overview\" target=\"_blank\">BDSA-2021-2085</a> | <span style=\"color:Orange\">6.5</span> | Vulnerability Score Greater Than Or Equal to 6 | Apache Ant is vulnerable to an out of memory error via a crafted `ZIP` archive. An attacker could exploit this in order to cause as denial-of-service (DoS) condition. | 1.6.5 |\n| / | ant/1.6.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-2083/overview\" target=\"_blank\">BDSA-2021-2083</a> | <span style=\"color:Orange\">6.5</span> | Vulnerability Score Greater Than Or Equal to 6 | Apache Ant is vulnerable to an out of memory error via a crafted `TAR` archive. An attacker could exploit this in order to cause as denial-of-service (DoS) condition.  **Note:** Per the Vendor, \"Versi | 1.6.5 |\n\n\nRecommended to upgrade to version 1.6.5-osgi.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "7.2"
+                            }
+                        },
+                        {
+                            "id": "bootstrap",
+                            "shortDescription": {
+                                "text": "The direct dependency bootstrap/3.3.7 has 7 vulnerabilities (max score 8.6)."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency bootstrap/3.3.7 has 7 vulnerabilities (max score 8.6).\n\nList of direct vulnerabilities:\nBDSA-2019-0423,BDSA-2018-4634,CVE-2018-14042,CVE-2018-14041,BDSA-2016-1585,CVE-2018-14040,BDSA-2018-4636"
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency bootstrap/3.3.7 has 7 vulnerabilities (max score 8.6).\n\n\n| Parent | Child Component | Vulnerability | Score |  Policy | Description | Current Ver |\n| --- | --- | --- | --- | --- | --- | --- |\n| / | bootstrap/3.3.7 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2018-4634/overview\" target=\"_blank\">BDSA-2018-4634</a> | <span style=\"color:Red\">8.6</span> | Vulnerability Score Greater Than Or Equal to 6 | A stored cross-site scripting (XSS) vulnerability has been discovered in Bootstrap. An attacker could exploit this vulnerability by distributing  a crafted link that executes malicious scripts in the  | 3.3.7 |\n| / | bootstrap/3.3.7 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2016-1585/overview\" target=\"_blank\">BDSA-2016-1585</a> | <span style=\"color:Red\">8.6</span> | Vulnerability Score Greater Than Or Equal to 6 | Bootstrap is vulnerable to cross-site scripting (XSS) due to the insufficient sanitization of user-provided input. An attacker could execute malicious scripts within a victim's browser by tricking the | 3.3.7 |\n| / | bootstrap/3.3.7 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2018-4636/overview\" target=\"_blank\">BDSA-2018-4636</a> | <span style=\"color:Red\">8.6</span> | Vulnerability Score Greater Than Or Equal to 6 | A reflected cross-site scripting (XSS) vulnerability has been discovered in Bootstrap. An attacker could exploit this vulnerability by distributing  a crafted link that executes malicious scripts on t | 3.3.7 |\n| / | bootstrap/3.3.7 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2019-0423/overview\" target=\"_blank\">BDSA-2019-0423</a> | <span style=\"color:Red\">8.1</span> | Vulnerability Score Greater Than Or Equal to 6 | bootstrap is vulnerable to cross-site scripting (XSS) due to an absence of sanitation in the `data-template`, `data-content` and `data-title` properties for tooltips and popovers plugin content. | 3.3.7 |\n| / | bootstrap/3.3.7 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/CVE-2018-14042/overview\" target=\"_blank\">CVE-2018-14042</a> | <span style=\"color:Orange\">6.1</span> | Vulnerability Score Greater Than Or Equal to 6 | In Bootstrap before 4.1.2, XSS is possible in the data-container property of tooltip. | 3.3.7 |\n| / | bootstrap/3.3.7 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/CVE-2018-14041/overview\" target=\"_blank\">CVE-2018-14041</a> | <span style=\"color:Orange\">6.1</span> | Vulnerability Score Greater Than Or Equal to 6 | In Bootstrap before 4.1.2, XSS is possible in the data-target property of scrollspy. | 3.3.7 |\n| / | bootstrap/3.3.7 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/CVE-2018-14040/overview\" target=\"_blank\">CVE-2018-14040</a> | <span style=\"color:Orange\">6.1</span> | Vulnerability Score Greater Than Or Equal to 6 | In Bootstrap before 4.1.2, XSS is possible in the collapse data-parent attribute. | 3.3.7 |\n\n\nRecommended to upgrade to version 3.4.1.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "8.6"
+                            }
+                        },
+                        {
+                            "id": "webgoat-container",
+                            "shortDescription": {
+                                "text": "The direct dependency webgoat-container/8.2.3-SNAPSHOT has 1 vulnerabilities in child dependencies (max score 6.5)."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency webgoat-container/8.2.3-SNAPSHOT has 1 vulnerabilities in child dependencies (max score 6.5).\n\nList of indirect vulnerabilities:\nBDSA-2021-3818"
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency webgoat-container/8.2.3-SNAPSHOT has 1 vulnerabilities in child dependencies (max score 6.5).\n\n\n| Parent | Child Component | Vulnerability | Score |  Policy | Description | Current Ver |\n| --- | --- | --- | --- | --- | --- | --- |\n| webgoat-container/8.2.3-SNAPSHOT | logback-classic/1.2.7 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-3818/overview\" target=\"_blank\">BDSA-2021-3818</a> | <span style=\"color:Orange\">6.5</span> | Vulnerability Score Greater Than Or Equal to 6 | Logback is vulnerable to remote code execution (RCE) due to missing restrictions on JNDI locations provided in the configuration file. An attacker with an access to `logback.xml` configuration file co | 1.2.7 |\n\n\nNo upgrade available at this time.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "0"
+                            }
+                        },
+                        {
+                            "id": "spring-boot-starter-validation",
+                            "shortDescription": {
+                                "text": "The direct dependency spring-boot-starter-validation/2.6.1 has 1 vulnerabilities in child dependencies (max score 6.5)."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency spring-boot-starter-validation/2.6.1 has 1 vulnerabilities in child dependencies (max score 6.5).\n\nList of indirect vulnerabilities:\nBDSA-2021-3818"
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency spring-boot-starter-validation/2.6.1 has 1 vulnerabilities in child dependencies (max score 6.5).\n\n\n| Parent | Child Component | Vulnerability | Score |  Policy | Description | Current Ver |\n| --- | --- | --- | --- | --- | --- | --- |\n| spring-boot-starter-validation/2.6.1 | logback-classic/1.2.7 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-3818/overview\" target=\"_blank\">BDSA-2021-3818</a> | <span style=\"color:Orange\">6.5</span> | Vulnerability Score Greater Than Or Equal to 6 | Logback is vulnerable to remote code execution (RCE) due to missing restrictions on JNDI locations provided in the configuration file. An attacker with an access to `logback.xml` configuration file co | 1.2.7 |\n\n\nRecommended to upgrade to version 2.6.2.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "0"
+                            }
+                        },
+                        {
+                            "id": "spring-boot-starter-test",
+                            "shortDescription": {
+                                "text": "The direct dependency spring-boot-starter-test/2.6.1 has 1 vulnerabilities in child dependencies (max score 6.5)."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency spring-boot-starter-test/2.6.1 has 1 vulnerabilities in child dependencies (max score 6.5).\n\nList of indirect vulnerabilities:\nBDSA-2021-3818"
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency spring-boot-starter-test/2.6.1 has 1 vulnerabilities in child dependencies (max score 6.5).\n\n\n| Parent | Child Component | Vulnerability | Score |  Policy | Description | Current Ver |\n| --- | --- | --- | --- | --- | --- | --- |\n| spring-boot-starter-test/2.6.1 | logback-classic/1.2.7 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-3818/overview\" target=\"_blank\">BDSA-2021-3818</a> | <span style=\"color:Orange\">6.5</span> | Vulnerability Score Greater Than Or Equal to 6 | Logback is vulnerable to remote code execution (RCE) due to missing restrictions on JNDI locations provided in the configuration file. An attacker with an access to `logback.xml` configuration file co | 1.2.7 |\n\n\nRecommended to upgrade to version 2.6.2.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "0"
+                            }
+                        },
+                        {
+                            "id": "ant-launcher",
+                            "shortDescription": {
+                                "text": "The direct dependency ant-launcher/1.6.5 has 3 vulnerabilities (max score 7.2)."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency ant-launcher/1.6.5 has 3 vulnerabilities (max score 7.2).\n\nList of direct vulnerabilities:\nBDSA-2018-1836,BDSA-2021-2085,BDSA-2021-2083"
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency ant-launcher/1.6.5 has 3 vulnerabilities (max score 7.2).\n\n\n| Parent | Child Component | Vulnerability | Score |  Policy | Description | Current Ver |\n| --- | --- | --- | --- | --- | --- | --- |\n| / | ant-launcher/1.6.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2018-1836/overview\" target=\"_blank\">BDSA-2018-1836</a> | <span style=\"color:Red\">7.2</span> | Vulnerability Score Greater Than Or Equal to 6 | Apache ant is vulnerable to an arbitrary file write vulnerability via a directory traversal. An attacker could exploit this vulnerability by supplying the component with a maliciously crafted archive  | 1.6.5 |\n| / | ant-launcher/1.6.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-2085/overview\" target=\"_blank\">BDSA-2021-2085</a> | <span style=\"color:Orange\">6.5</span> | Vulnerability Score Greater Than Or Equal to 6 | Apache Ant is vulnerable to an out of memory error via a crafted `ZIP` archive. An attacker could exploit this in order to cause as denial-of-service (DoS) condition. | 1.6.5 |\n| / | ant-launcher/1.6.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-2083/overview\" target=\"_blank\">BDSA-2021-2083</a> | <span style=\"color:Orange\">6.5</span> | Vulnerability Score Greater Than Or Equal to 6 | Apache Ant is vulnerable to an out of memory error via a crafted `TAR` archive. An attacker could exploit this in order to cause as denial-of-service (DoS) condition.  **Note:** Per the Vendor, \"Versi | 1.6.5 |\n\n\nNo upgrade available at this time.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "7.2"
+                            }
+                        }
+                    ]
+                }
+            },
+            "results": [
+                {
+                    "ruleId": "xstream",
+                    "message": {
+                        "text": "The direct dependency xstream/1.4.5 has 33 vulnerabilities (max score 9.8)."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "webgoat-lessons/vulnerable-components/pom.xml"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "3d9d879fc3b5b3023a328d60772c89b96c544c8d183b63915435f7cc"
+                    }
+                },
+                {
+                    "ruleId": "webdrivermanager",
+                    "message": {
+                        "text": "The direct dependency webdrivermanager/4.3.1 has 5 vulnerabilities in child dependencies (max score 6.5)."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "webgoat-integration-tests/pom.xml"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "3d9d879fc3b5b3023a328d60772c89b96c544c8d183b63915435f7cc"
+                    }
+                },
+                {
+                    "ruleId": "ant",
+                    "message": {
+                        "text": "The direct dependency ant/1.6.5 has 3 vulnerabilities (max score 7.2)."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "webgoat-lessons/vulnerable-components/pom.xml"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "3d9d879fc3b5b3023a328d60772c89b96c544c8d183b63915435f7cc"
+                    }
+                },
+                {
+                    "ruleId": "bootstrap",
+                    "message": {
+                        "text": "The direct dependency bootstrap/3.3.7 has 7 vulnerabilities (max score 8.6)."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "webwolf/pom.xml"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "3d9d879fc3b5b3023a328d60772c89b96c544c8d183b63915435f7cc"
+                    }
+                },
+                {
+                    "ruleId": "webgoat-container",
+                    "message": {
+                        "text": "The direct dependency webgoat-container/8.2.3-SNAPSHOT has 1 vulnerabilities in child dependencies (max score 6.5)."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "Unknown"
+                                },
+                                "region": {
+                                    "startLine": 0
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "3d9d879fc3b5b3023a328d60772c89b96c544c8d183b63915435f7cc"
+                    }
+                },
+                {
+                    "ruleId": "spring-boot-starter-validation",
+                    "message": {
+                        "text": "The direct dependency spring-boot-starter-validation/2.6.1 has 1 vulnerabilities in child dependencies (max score 6.5)."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "Unknown"
+                                },
+                                "region": {
+                                    "startLine": 0
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "3d9d879fc3b5b3023a328d60772c89b96c544c8d183b63915435f7cc"
+                    }
+                },
+                {
+                    "ruleId": "spring-boot-starter-test",
+                    "message": {
+                        "text": "The direct dependency spring-boot-starter-test/2.6.1 has 1 vulnerabilities in child dependencies (max score 6.5)."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "Unknown"
+                                },
+                                "region": {
+                                    "startLine": 0
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "3d9d879fc3b5b3023a328d60772c89b96c544c8d183b63915435f7cc"
+                    }
+                },
+                {
+                    "ruleId": "ant-launcher",
+                    "message": {
+                        "text": "The direct dependency ant-launcher/1.6.5 has 3 vulnerabilities (max score 7.2)."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "webgoat-lessons/vulnerable-components/pom.xml"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "3d9d879fc3b5b3023a328d60772c89b96c544c8d183b63915435f7cc"
+                    }
+                }
+            ]
+        }
+    ]
+}
